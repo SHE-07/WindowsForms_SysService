@@ -1,0 +1,6 @@
+.vs/
+bin/
+obj/
+Properties/
+SysFileClass.csproj
+SysFileClass.slnx
