@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SysFileClass
+﻿namespace SystemWorkWithFileConfig.DataClass
 {
 
     public class SysConfigurationApplication
@@ -8,7 +6,6 @@ namespace SysFileClass
 
 
         public class DataInfConf
-
         {
             public string Name_systems_managment_database { get; set; } = "PostgreSQL";
             public int NumberPort { get; set; } = 5432;
@@ -21,9 +18,9 @@ namespace SysFileClass
         }
 
         public DataInfConf conf { get; set; } = new DataInfConf();
-      
+
 
     }
 
-    
+
 }

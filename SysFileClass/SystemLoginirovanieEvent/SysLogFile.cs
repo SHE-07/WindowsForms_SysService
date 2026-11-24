@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace SysFileClass
+namespace SystemLoginirovanieEvent.SysFileClass
 {
     /// <summary>
     /// Класс для работы с log файлами
