@@ -40,9 +40,14 @@ namespace SystemLoginirovanieEvent.SysFileClass
         /// <exception cref="ArgumentNullException"></exception>
         public void WriteErrorInLog(object e, Exception ex)
         {
-            if (ex == null)
+            if (e is null)
             {
-                throw new ArgumentNullException(nameof(ex), "Параметр ошибка - пуст !");
+                throw new ArgumentNullException(nameof(e));
+            }
+
+            if (ex is null)
+            {
+                throw new ArgumentNullException(nameof(ex));
             }
 
             string textlog = $"[{DateTimeOffset.Now:dd.MM.yyyy HH:mm:ss}]:\t{ex.Message}\t{ex.InnerException}\t{ex.Source}\t{ex.StackTrace}";
